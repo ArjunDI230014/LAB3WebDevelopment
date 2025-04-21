@@ -10,21 +10,59 @@
             padding: 30px;
             text-align: center;
         }
-        ul {
-            list-style-type: square;
-            font-size: 20px;
-            text-align: left;
-            display: inline-block;
+        h1 {
+            margin-bottom: 40px;
+        }
+        .hobbies-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .hobby {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .hobby:hover {
+            transform: scale(1.05);
+        }
+        .hobby h3 {
+            color: #333366;
+            margin-bottom: 10px;
+        }
+        a {
+            display: block;
+            margin-top: 40px;
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ff6600;
         }
     </style>
 </head>
 <body>
     <h1>My Hobbies</h1>
-    <ul>
-        <li>Gaming – I enjoy action and open-world games.</li>
-        <li>Coding – Building fun and useful applications.</li>
-        <li>Listening to Music – Especially Tamil & Lo-fi beats.</li>
-    </ul>
-    <p><a href="index.html">Back to Home</a></p>
+
+    <div class="hobbies-container">
+        <div class="hobby">
+            <h3>🎮 Gaming</h3>
+            <p>I love playing action and open-world games. It's my way to relax and challenge myself.</p>
+        </div>
+        <div class="hobby">
+            <h3>💻 Coding</h3>
+            <p>Building websites and small tools keeps me engaged and helps sharpen my programming skills.</p>
+        </div>
+        <div class="hobby">
+            <h3>🎧 Music</h3>
+            <p>Listening to Tamil songs and Lo-fi beats helps me concentrate and unwind after a long day.</p>
+        </div>
+    </div>
+
+    <a href="index.html">← Back to Home</a>
 </body>
 </html>
